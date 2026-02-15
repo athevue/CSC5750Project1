@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Adam Vue | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
     <!-- Header -->
     <header>
-        <h1>Adam Vue</h1>
-        <nav>
+        <h1 class="logo">Adam Vue</h1>
+
+        <nav id="homeNav" class="navbar">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#courses">Courses</a></li>
@@ -20,8 +26,30 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <h2>Computer Science Student</h2>
-        <p>Passionate about building efficient, scalable, and meaningful software.</p>
+
+        <div class="hero-text">
+            <h2 class="hero-title">
+                Software Engineer, <br>CS @ Wayne State
+            </h2>
+
+            <p class="hero-subtitle">
+                Software Engineer Intern @ BorgWarner
+            </p>
+            <p class="hero-caption">
+                Growing up as a second-generation college student, I’ve seen firsthand 
+                the value of hard work and opportunity. Balancing full-time studies at 
+                Wayne State with current part-time work at BorgWarner has taught 
+                me that passion is everything. 
+                I truly love building software as I witnessed in my experience of how
+                it can make life easier, brighter, and more meaningful for people. 
+            </p>
+        </div>
+
+        <div class="hero-image">
+            <!-- Replace with your real image file -->
+            <img src="picture.jpeg" alt="Adam Vue">
+        </div>
+
     </section>
 
     <!-- Experience Section -->
@@ -29,14 +57,41 @@
         <h2>Experience</h2>
 
         <div class="card">
-            <h3>Software Engineering Intern</h3>
-            <p><strong>Company:</strong> Tyler Technologies</p>
-            <p>Worked on approval workflows, backend logic, and performance improvements.</p>
+            <div class="card-header">
+                <h3>Software Applications Engineer Intern</h3>
+                <span class="card-date">Dec 2025 – Current</span>
+            </div>
+            <p class="company">Company: BorgWarner</p>
+            <p>
+                Developed and enhanced the Inspection/Repair Apps 
+                and assisted initiatives adhering to the IATF 16949 and ISO 9001 standards.
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Project Mangement Intern</h3>
+                <span class="card-date">Mar 2025 – Nov 2025</span>
+            </div>            
+            <p class="company">Company:  Wayne State C&IT</p>
+            <p>
+                Automated manual processes, enhanced Project Mangement Database,
+                and improved project tracking and reporting.
+            </p>
         </div>
 
         <div class="card">
-            <h3>Math Tutor</h3>
-            <p>Provided one-on-one sessions for elementary students to improve math fundamentals.</p>
+            <div class="card-header">
+                <h3>Software Development Intern</h3>
+                <span class="card-date">May 2025 – Aug 2025</span>
+            </div>            
+            <p class="company">Company: Tyler Technologies</p>
+            <p>
+                Developed a full-stack web application using Blazor(.Net), RESTful APIs, 
+                and SQL Server, that streamlined approval workflows for managers, leadership,
+                and clients to access approvals outside the firewall.
+            </p>
         </div>
     </section>
 
@@ -45,26 +100,27 @@
         <h2>Projects</h2>
 
         <div class="card">
-            <h3>Approval Workflow System.</h3>
-            <p>Built a role-based approval system with audit tracking and improved load performance.</p>
+            <div class="card-header">
+                <h3>Warrior Thrones</h3>
+                <span class="card-date">Oct 2025 – Dec 2025</span>
+            </div>              <p>
+                Developed a full-stack web application using React, Node.js, 
+                and SupaBase or Wayne State students and staff to submit reviews 
+                and report incidents, helping users find clean, accessible campus bathrooms.
+            </p>
         </div>
 
         <div class="card">
-            <h3>Caesar Cipher Tool</h3>
-            <p>Implemented encryption and brute-force decryption in C++.</p>
+            <div class="card-header">
+                <h3>Python Desktop Cleaner</h3>
+                <span class="card-date">Jan 2025 – Feb 2025</span>
+            </div>              <p>
+                Developed a live Python Script using Watchdog Libraries to clean desktop into 
+                categorized folders, improving organization and productivity.
+            </p>
         </div>
     </section>
 
-    <!-- Courses Section -->
-    <section id="courses">
-        <h2>Courses</h2>
-        <ul>
-            <li>Data Structures & Algorithms</li>
-            <li>Object-Oriented Programming</li>
-            <li>Database Systems</li>
-            <li>Web Development</li>
-        </ul>
-    </section>
 
     <footer>
         <p>© 2026 Adam Vue</p>
